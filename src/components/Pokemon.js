@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { Link } from "react-router-dom";
 import ReviewFeed from "./ReviewFeed";
 import NewReview from "./NewReview";
 
@@ -11,7 +10,7 @@ function Pokemon() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:9292/pokemon/${id}`)
+    fetch(`https://ruby-pokemon.herokuapp.com/pokemon/${id}`)
       .then((r) => r.json())
       .then(setPokemon);
   }, [id]);
@@ -19,7 +18,9 @@ function Pokemon() {
   const [reviews, setReviews] = useState([]);
 
   const getProfile = async () => {
-    const response = await fetch(`http://localhost:9292/pokemon/${id}/reviews`);
+    const response = await fetch(
+      `https://ruby-pokemon.herokuapp.com/pokemon/${id}/reviews`
+    );
     const data = await response.json();
     setReviews(data.reviews);
   };
@@ -35,6 +36,7 @@ useEffect(() => {
   return (
     <div>
       <div className="card">
+        <div className="card-header">
         <h1>{pokemon.name}</h1>
         <p>
           <strong>Location:</strong> <em>{pokemon.location}</em>
@@ -42,6 +44,7 @@ useEffect(() => {
         <p>
           <strong>Signature Move:</strong> <em>{pokemon.move}</em>
         </p>
+        </div>
       </div>
       <div>
         <ReviewFeed reviews={reviews} />

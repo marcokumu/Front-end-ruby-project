@@ -23,7 +23,7 @@ function ReviewFeed({ reviews }) {
 
   function handleDelete(e) {
     // e.preventDefault()
-    fetch(`http://localhost:9292/reviews/${reviews.id}`, {
+    fetch(`https://ruby-pokemon.herokuapp.com/reviews/${reviews.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

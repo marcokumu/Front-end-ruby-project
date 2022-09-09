@@ -10,7 +10,7 @@ function NewReview({ pokemon_id }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch(`http://localhost:9292/reviews`, {
+    fetch(`https://ruby-pokemon.herokuapp.com/reviews`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ function NewReview({ pokemon_id }) {
         <input
           type="text"
           id="rating"
-          placeholder="Rating"
+          placeholder="1..10 Rating"
           onChange={(e) => setRating(e.target.value)}
         />
         <button type="submit" className="btn">

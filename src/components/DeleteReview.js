@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import { useParams } from "react-router-dom";
 
 function DeleteReview({ reviews_id }) {
@@ -6,7 +6,7 @@ function DeleteReview({ reviews_id }) {
 
   function handleDelete(e) {
     e.preventDefault();
-    fetch(`http://localhost:9292/reviews/${reviews_id}`, {
+    fetch(`https://ruby-pokemon.herokuapp.com/reviews/${reviews_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
