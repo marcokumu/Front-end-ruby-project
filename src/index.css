@@ -11,3 +11,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn {
+  display: inline-block;
+  background: rgb(34, 32, 32);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 0 0 7px 0 #ddd;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  width: 300px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+  background: rgb(171, 171, 202);
+  font-size: larger;
+}
+
+.comment-body {
+  padding: 0 20px;
+  padding-left: 28px;
+  display: flex;
+  width: 100%;
+}
+
+.comment {
+  position: relative;
+  margin: 20px ;
+  
+}
+
+.div-feed{
+  flex-direction: column-reverse;
+  border: 1px solid rgb(172, 24, 24);
+  border-radius: 15px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  justify-content: flex-start;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+}
+
+nav{
+  height: 50px;
+  border: 1px solid #e0dada
+  
+ 
+}
+
+.div-header{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.reviews {
+ justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.h2{
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+.mainfeed{
+  margin-left: 9%;
+}
+form {
+ width: 20%;
+
+}
