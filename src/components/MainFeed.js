@@ -24,7 +24,7 @@ function MainFeed({ pokemons }) {
           ))
         ) : (
           <>
-            <p>Nothing here</p>
+            <p>Still loading, please wait...</p>
           </>
         )}
       </ul>

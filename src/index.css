@@ -47,8 +47,7 @@ code {
 
 .comment {
   position: relative;
-  margin: 20px ;
-  
+  margin: 20px ; 
 }
 
 .div-feed{
@@ -66,9 +65,7 @@ code {
 
 nav{
   height: 50px;
-  border: 1px solid #e0dada
-  
- 
+  border: 1px solid #e0dada;
 }
 
 .div-header{
@@ -141,6 +138,6 @@ input{
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 10px;
 }
-.card-header{
 
-}
+
+
