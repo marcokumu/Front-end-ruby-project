@@ -142,6 +142,7 @@ input{
 .loading-text{
   text-align: center;
   font-size: large;
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
 }
 
