@@ -139,5 +139,9 @@ input{
   margin-bottom: 10px;
 }
 
-
+.loading-text{
+  text-align: center;
+  font-size: large;
+  
+}
 
