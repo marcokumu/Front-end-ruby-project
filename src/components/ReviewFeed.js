@@ -6,19 +6,6 @@ import DeleteReview from "./DeleteReview";
 function ReviewFeed({ reviews }) {
   const navigate = useNavigate();
   const { id } = useParams();
-
-  // const [reviews, setReviews] = useState([])
-
-  // const getProfile = async () => {
-  //     const response = await fetch(`http://localhost:9292/pokemon/${id}/reviews`);
-  //     const data = await response.json();
-  //     setReviews(data.reviews);
-  //   };
-
-  // useEffect(() => {
-  //     getProfile();
-  // }, []);
-
   console.log(reviews);
 
   function handleDelete(e) {
